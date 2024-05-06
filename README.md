@@ -50,6 +50,8 @@ Our challenges included the integration of the servo motor with the SAMW25 micro
 
 ### Prototype Learnings
 
+Building and testing our prototype, which involved custom PCB design, 3D modeling, and sensor-microcontroller integration using Atmel Studio, taught us valuable lessons. We learned the importance of proper power circuitry and signal routing, especially for SPI communication, to ensure the PCB's functionality. Using Altium Designer improved our skills in handling complex circuit designs. Although initially unfamiliar, learning CAD modeling with SolidWorks was a rewarding experience. Understanding real-time operating systems (RTOS) allowed us to integrate multitasking, improving the device's responsiveness and reliability. Employing Git for version control enhanced our collaborative coding efforts and project workflow. Rigorous testing and streamlined project management were crucial for harmonizing hardware and software integration.
+
 ### Next Steps
 
 ### Takeaways from ESE5160
