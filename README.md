@@ -46,6 +46,8 @@ By focusing on data logging—a critical aspect of optimizing racecar performanc
 
 ### Challenges
 
+Our challenges included the integration of the servo motor with the SAMW25 microcontroller, particularly due to the active spoiler system. The servo's activation depended on the motor's RPM, which required considerable effort to configure properly. Additionally, the 3D printing process for our model proved to be time-consuming. Originally, we intended for the 3D model to feature maneuverability, envisioning printed components like the wheelbase and accel. However, after printing, we encountered static components, unable to move as intended. This issue, coupled with the need for more power to propel the car, led us to power only one part of the wheel.
+
 ### Prototype Learnings
 
 ### Next Steps
