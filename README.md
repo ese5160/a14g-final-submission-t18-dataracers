@@ -80,6 +80,16 @@ By focusing on data logging—a critical aspect of optimizing racecar performanc
 
 ![alt text](IMG_4316.jpg)
 
-### Node-Red Dashboard
+### Custom PCBA Thermals
+
+### Altium Board Design 2D
+
+### Altium Board Design 3D
+
+### Node-Red Dashboard Frontend
 
 ![alt text](Dashboard_DataRacers.png)
+
+### Node-Red Dashboard Backend
+
+### System Block Diagram
