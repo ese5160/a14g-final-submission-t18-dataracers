@@ -40,7 +40,17 @@ However, as we delved deeper into the realm of motorsports, we realized that the
 
 This realization sparked the idea of developing a solution that could democratize access to data logging technology for amateur racing leagues and drivers. Rather than trying to reinvent the wheel in the professional racing sphere, we saw an opportunity to make a meaningful impact by addressing the specific needs and challenges of the amateur racing community.
 
-By focusing on data logging—a critical aspect of optimizing racecar performance and driver skill—we aimed to create a solution that would empower amateur racers to enhance their competitiveness and enjoyment of the sport. Our goal was to leverage our expertise and passion for motorsports to develop a practical, affordable, and user-friendly device that could level the playing field and enable amateur racers to unlock their full potential on the  track
+By focusing on data logging—a critical aspect of optimizing racecar performance and driver skill—we aimed to create a solution that would empower amateur racers to enhance their competitiveness and enjoyment of the sport. Our goal was to leverage our expertise and passion for motorsports to develop a practical, affordable, and user-friendly device that could level the playing field and enable amateur racers to unlock their full potential on the  track.
+
+### Device Functionality
+
+### Challenges
+
+### Prototype Learnings
+
+### Next Steps
+
+### Takeaways from ESE5160
 
 ### Project Links
 
@@ -54,8 +64,22 @@ By focusing on data logging—a critical aspect of optimizing racecar performanc
 
 ## 4. Project Photos & Screenshots
 
+### 3D Printed Race-Car
+
 ![alt text](IMG_3412.jpg)
-![alt text](IMG_4316.jpg)
-![alt text](IMG_4317.jpg)
+
+### Test Setup
+
 ![alt text](IMG_4328.jpg)
+
+### Custom PCBA Top
+
+![alt text](IMG_4317.jpg)
+
+### Custom PCBA Bottom
+
+![alt text](IMG_4316.jpg)
+
+### Node-Red Dashboard
+
 ![alt text](Dashboard_DataRacers.png)
