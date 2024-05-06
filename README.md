@@ -42,6 +42,14 @@ This realization sparked the idea of developing a solution that could democratiz
 
 By focusing on data logging—a critical aspect of optimizing racecar performance and driver skill—we aimed to create a solution that would empower amateur racers to enhance their competitiveness and enjoyment of the sport. Our goal was to leverage our expertise and passion for motorsports to develop a practical, affordable, and user-friendly device that could level the playing field and enable amateur racers to unlock their full potential on the  track
 
+### Project Links
+
+#### Node-Red Dashboard - <http://172.191.242.245:1880/ui/>
+
+#### A12G Code Repository - <https://github.com/ese5160/a12g-firmware-drivers-t18-dataracers>
+
+#### Altium 365 - <https://upenn-eselabs.365.altium.com/designs/B30BCA82-12BB-4789-9F4A-3266D740E17A>
+
 ## 3. Hardware & Software Requirements
 
 ## 4. Project Photos & Screenshots
