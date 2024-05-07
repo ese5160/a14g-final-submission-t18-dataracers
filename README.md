@@ -10,7 +10,7 @@
 
 ## 1. Video Presentation
 
- <https://youtu.be/YIpAmdMHwzU>
+### [Demo Video](https://youtu.be/YIpAmdMHwzU)
 
 ## 2. Project Summary
 
