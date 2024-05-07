@@ -44,6 +44,8 @@ By focusing on data logging—a critical aspect of optimizing racecar performanc
 
 ### Device Functionality
 
+![alt text](Blockdiagram.png)
+
 ### Challenges
 
 Our challenges included the integration of the servo motor with the SAMW25 microcontroller, particularly due to the active spoiler system. The servo's activation depended on the motor's RPM, which required considerable effort to configure properly. Additionally, the 3D printing process for our model proved to be time-consuming. Originally, we intended for the 3D model to feature maneuverability, envisioning printed components like the wheelbase and accel. However, after printing, we encountered static components, unable to move as intended. This issue, coupled with the need for more power to propel the car, led us to power only one part of the wheel.
@@ -65,6 +67,52 @@ Building and testing our prototype, which involved custom PCB design, 3D modelin
 #### Altium 365 - <https://upenn-eselabs.365.altium.com/designs/B30BCA82-12BB-4789-9F4A-3266D740E17A>
 
 ## 3. Hardware & Software Requirements
+
+### Hardware Requirements Specification (HRS)
+
+| Num | Components                  | Manufacture Number | Interface | Operating Voltage                         |
+| --- | --------------------------- | ------------------ | --------- | ----------------------------------------- |
+| 1   | Temperature Sensor          | SHTC3-TR-10KS      | I2C       | 1.62V ~ 3.6 V                             |
+| 2   | TFT LCD Display             | ST7735R            | I2C       | 3.3V or Ultra-low dropout 3.3 V regulator |
+| 3   | Accelerometer               | LS2DH12            | I2C       | Wide supply voltage, 1.71 V to 3.6 V      |
+| 4   | Actuator Adafruit Feather   | 3119               | I2C       | 100mA                                     |
+| 5   | RPM Sensor                  | 55100-3H-02-A      |           | 20mA                                      |
+
+#### Abbreviations
+
+TFT: Thin Film Transistor, I2C: Inter-Integrated Circuit, DRS: Drag Reduction System, RPM: Revolutions per minute
+
+**HRS 01:** The microcontroller shall be a SAMD21 Cortex-M0+ based MCU from Microchip
+
+**HRS 02:** A temperature sensor, designated by the manufacturer number SHTC3-TR-10KS, shall be utilized. It shall employ the I2C interface for communication, and the specified operating voltage for the sensor shall fall within the range of 1.62V to 3.6V. The sensor shall provide temperature accuracy of ±0.2°C over a range of -40°C to 125°C.This configuration shall serve the purpose of monitoring the temperature of the tires/engine.
+
+**HRS 03:** A TFT LCD display with the manufacturer number ST7735R shall be utilized. Communication with the display shall occur through the I2C interface. The operating voltage for the display shall be either 3.3V or Ultra-low dropout 3.3V regulator.
+
+**HRS 04:** A three-axis linear accelerometer LIS2DH12 shall be employed for maneuvering data. It shall provide ±2g/±4g/±8g/±16g selectable full scales. It shall communicate through the I2C interface.
+The accelerometer operates within a wide supply voltage range, specifically 1.71V to 3.6V.
+
+**HRS 05:** An actuator shall be integrated to simulate a Drag Reduction System (DRS) flap. We've opted to utilize Adafruit's Power Relay Featherwing to emulate the actuation of the car's flap. The relay consumes 100mA from the 3.3V power supply.
+
+**HRS 06:** RPM Sensor (55100) shall serve as a compact flange-mounted hall effect sensor, mandated for measuring the RPM of the formula car. The Sensor draws 20mA of power.
+
+Data Transmission Information recorded by the data logger shall be transmitted to external software for monitoring and data acquisition.
+This hardware setup aims to provide a comprehensive solution for monitoring and optimizing the performance of a Formula Car, capturing crucial data related to temperature, acceleration and speed.
+
+### Software Requirements Specification (SRS)
+
+**SRS 01:** The system shall read temperature data from the SHTC3 sensor every 500ms
+
+**SRS 02:** The system shall read 3-axis acceleration data from the LIS2DH12 sensor every 100ms
+
+**SRS 03:** The system shall read RPM data from the RPM sensor every 100ms
+
+**SRS 04:** The system shall log all sensor data to the on-board SD card in CSV format
+
+**SRS 05:** The system shall transmit the sensor data over WiFi to the trackside computer once per second
+
+**SRS 06:** The system shall provide a real-time dashboard display of temperature, RPM, and acceleration on the TFT LCD
+
+**SRS 07:** The system shall actuate the DRS flap when commanded by the external software
 
 ## 4. Project Photos & Screenshots
 
@@ -107,3 +155,15 @@ Building and testing our prototype, which involved custom PCB design, 3D modelin
 ![alt text](<Node-Red Dashboard Backend.jpg>)
 
 ### System Block Diagram
+
+![alt text](simple.png)
+
+## 5. Demo Day
+
+![alt text](DemoPhoto.jpg)
+
+![alt text](TeamPhoto.jpg)
+
+![alt text](ClassPhoto.jpg)
+
+# Thank you for being a part of DataRacers
