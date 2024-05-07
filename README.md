@@ -4,7 +4,7 @@
 
     * Team Number: 18
     * Team Name: DataRacers
-    * Team Members: Saibaba Nagrund, Deepak Shankar Ravisankar
+    * Team Members: Saibaba Nargund, Deepak Shankar Ravisankar
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t18-dataracers
     * Description of test hardware: Custom DataRacers PCBA
 
@@ -38,7 +38,7 @@ Overall, by integrating internet-enabled functionalities into our device, we enh
 
 Our inspiration for this project stemmed from our passion for Formula One racing. As avid fans of the sport, we were deeply fascinated by the high-stakes, high-speed world of professional racing and the cutting-edge technology employed by Formula One teams to gain a competitive edge.
 
-However, as we delved deeper into the realm of motorsports, we realized that the vast majority of racing enthusiasts operate in amateur leagues with significantly smaller budgets compared to their professional counterparts. Despite their passion and dedication, these amateur racers often face numerous challenges, including limited access to advanced technology and data analytics tools.
+However, as we delved deeper into the world of motorsports, we realized that the vast majority of racing enthusiasts operate in amateur leagues with significantly smaller budgets compared to their professional counterparts. Despite their passion and dedication, these amateur racers often face numerous challenges, including limited access to advanced technology and data analytics tools.
 
 This realization sparked the idea of developing a solution that could democratize access to data logging technology for amateur racing leagues and drivers. Rather than trying to reinvent the wheel in the professional racing sphere, we saw an opportunity to make a meaningful impact by addressing the specific needs and challenges of the amateur racing community.
 
@@ -48,17 +48,35 @@ By focusing on data logging—a critical aspect of optimizing racecar performanc
 
 ![alt text](Blockdiagram.png)
 
+Our device monitors RPM data, on-board temperature data, and acceleration data using our on-board IMU. RPM data is used to monitor the speed of the vehicle and enables the servo to use the RPM data to control the spoiler of the vehicle. The spoiler is actuated using a servo which is programmed to adapt to the RPM values. On-board temperature data can be used to monitor either engine temperature, tire temperature, brake temperature, or ambient vehicle temperature. Acceleration values can be used to monitor g-forces on all axes of the vehicle and cornering forces as well. This data is streamed in real-time to the node-red dashboard using the cloud and Wi-Fi. This enables real-time monitoring of our data. The device can also store this data for future analysis and match performance analysis to devise strategies. Along with this, we can update our device over the cloud and control the servo from the cloud as well.
+
 ### Challenges
 
-Our challenges included the integration of the servo motor with the SAMW25 microcontroller, particularly due to the active spoiler system. The servo's activation depended on the motor's RPM, which required considerable effort to configure properly. Additionally, the 3D printing process for our model proved to be time-consuming. Originally, we intended for the 3D model to feature maneuverability, envisioning printed components like the wheelbase and accel. However, after printing, we encountered static components, unable to move as intended. This issue, coupled with the need for more power to propel the car, led us to power only one part of the wheel.
+Our challenges included the integration of the servo motor with the SAMW25 microcontroller, particularly due to the active spoiler system. The servo's activation depended on the motor's RPM, which required considerable effort to configure properly. Additionally, the 3D printing process for our model proved to be time-consuming. Originally, we intended for the 3D model to feature maneuverability, envisioning printed components like the wheelbase and axle. However, after printing, we encountered static components, unable to move as intended. This issue, coupled with the need for more power to propel the car, led us to power only one part of the wheel.
 
 ### Prototype Learnings
 
-Building and testing our prototype, which involved custom PCB design, 3D modeling, and sensor-microcontroller integration using Atmel Studio, taught us valuable lessons. We learned the importance of proper power circuitry and signal routing, especially for SPI communication, to ensure the PCB's functionality. Using Altium Designer improved our skills in handling complex circuit designs. Although initially unfamiliar, learning CAD modeling with SolidWorks was a rewarding experience. Understanding real-time operating systems (RTOS) allowed us to integrate multitasking, improving the device's responsiveness and reliability. Employing Git for version control enhanced our collaborative coding efforts and project workflow. Rigorous testing and streamlined project management were crucial for harmonizing hardware and software integration.
+Building and testing our prototype, which involved custom PCB design, 3D modeling, and sensor-microcontroller integration using Atmel Studio, taught us valuable lessons. We learned the importance of proper power circuitry and signal routing, especially for I2C communication, to ensure the PCB's functionality. Using Altium Designer improved our skills in handling complex circuit designs. Although initially unfamiliar, learning CAD modeling with SolidWorks was a rewarding experience. Understanding real-time operating systems (RTOS) allowed us to integrate multitasking, improving the device's responsiveness and reliability. Employing Git for version control enhanced our collaborative coding efforts and project workflow. Rigorous testing and streamlined project management were crucial for hardware and software integration.
 
 ### Next Steps
 
+- We can re-design the PCB to support CAN communication and OBD support in next iterations of this device which will help in higher granularity and accurate transfer of data than I2C or SPI. This will also standardise our device and bring it on-par with industry automotive standards.
+
+- Additional ports can be added to support a wide range of sensors. This might even involve changes to the memory and power requirements of our design.
+
+- Device enclosure can be re-designed to meet with IP standards.
+
+- Integrating a Display in future design will enable the driver to keep track of their vehicle performance parameters.
+
 ### Takeaways from ESE5160
+
+- ESE5160 helped in experiencing the product design timeline right from ideation to execution.
+
+- Adapting to the project need and demands.
+
+- Troublshooting and coming up with innovative ideas to make things work as intended.
+
+- NEVER GIVE UP!!
 
 ### Project Links
 
