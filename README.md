@@ -16,6 +16,8 @@
 
 ### Device Description
 
+The Racecar Datalogger is an IOT device designed to monitor and record key performance metrics in a racecar during track events. It utilizes the SAMW25 microcontroller along with various sensors to measure engine RPM, acceleration forces, and engine temperature. The data is logged to an on-board SD card for post-race analysis. The device also provides real-time feedback to the crew via WiFi.
+
 #### What problem is your device solving? How do you use the Internet so augment your device functionality?
 
 The device we've developed aims to address the challenge of data logging in amateur racing leagues. We observed that while data is crucial for optimizing racecar setups and driver performance, existing solutions are often prohibitively expensive, complex to install and operate, and designed for professional teams with substantial budgets.
