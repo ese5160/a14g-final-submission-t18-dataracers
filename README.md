@@ -80,11 +80,11 @@ Building and testing our prototype, which involved custom PCB design, 3D modelin
 
 ### Project Links
 
-#### Node-Red Dashboard - <http://172.191.242.245:1880/ui/>
+### [Node-Red Dashboard](http://172.191.242.245:1880/ui/)
 
-#### A12G Code Repository - <https://github.com/ese5160/a12g-firmware-drivers-t18-dataracers>
+### [A12G Code Repository](https://github.com/ese5160/a12g-firmware-drivers-t18-dataracers)
 
-#### Altium 365 - <https://upenn-eselabs.365.altium.com/designs/B30BCA82-12BB-4789-9F4A-3266D740E17A>
+### [Altium 365](https://upenn-eselabs.365.altium.com/designs/B30BCA82-12BB-4789-9F4A-3266D740E17A)
 
 ## 3. Hardware & Software Requirements
 
@@ -178,7 +178,15 @@ This hardware setup aims to provide a comprehensive solution for monitoring and 
 
 ![alt text](simple.png)
 
-## 5. Demo Day
+## 5. A12G Codebase
+
+### [A12G Code Repository Link](https://github.com/ese5160/a12g-firmware-drivers-t18-dataracers)
+
+### [Node-Red Dashboard Link](http://172.191.242.245:1880/ui/)
+
+### [Altium 365 Link](https://upenn-eselabs.365.altium.com/designs/B30BCA82-12BB-4789-9F4A-3266D740E17A)
+
+## 6. Demo Day
 
 ![alt text](DemoPhoto.jpg)
 
