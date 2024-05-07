@@ -134,6 +134,9 @@ This hardware setup aims to provide a comprehensive solution for monitoring and 
 
 **SRS 07:** The system shall actuate the DRS flap when commanded by the external software
 
+The initial hardware requirements specification (HRS) outlines the necessary components for a comprehensive vehicle monitoring system, including a temperature sensor (SHTC3-TR-10KS), TFT LCD display (ST7735R), three-axis accelerometer (LIS2DH12), actuator (Adafruit Feather 3119) for simulating a drag reduction system (DRS) flap, and an RPM sensor (55100-3H-02-A). The software requirements specification (SRS) defines the system's functionality, such as reading sensor data at specified intervals, logging data to an SD card, transmitting data over WiFi, providing a real-time dashboard display, and actuating the DRS flap based on external commands.
+Our team successfully implemented all the requirements, except for integrating the TFT LCD display into the device and replaced the relay with a servo for the DRS flap actuation. The system can monitor and log temperature, acceleration, and RPM data, transmit it wirelessly, and control the DRS flap remotely. This comprehensive solution allows for real-time vehicle monitoring, data analysis, and performance optimization, while the exclusion of the TFT LCD display does not significantly impact the core functionality.
+
 ## 4. Project Photos & Screenshots
 
 ### 3D Printed Race-Car
